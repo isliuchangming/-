@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+				
+				
+	<script>
+function setColor(){
+	var obj=document.getElementsByTagName("option");
+	console.dir(obj);
+	for(var i=0;i<obj.length;i++)
+	{ 
+		if(obj[i].checked)
+		{
+			obj[i].style.color="white";
+			obj[i].style.backgroundColor="black";
+			}
+			else{
+				
+				obj[i].style.color=' ';
+			obj[i].style.backgroundColor=' ';
+				}
+		
+		}
+		  document.body.focus();   //窗体获得焦点
+	}
+</script>
+<select onChange="setColor();" multiple="multiple">
+    <option style="color:yellow; background-color:red;">选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+    <option>选项4</option>
+    <option>选项5</option>
+</select>
+</body>
+</html>

@@ -1,0 +1,844 @@
+/*	
+ * 这是首页的body部分
+ */
+
+
+
+
+/* S   侧边栏搜索部分 */
+@charset "utf-8";
+/* CSS Document */
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td, input, textarea, hr, img, label, span,select,strong,b{margin:0px;padding:0px;}
+fieldset,img,abbr,acronym{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+q:before,q:after{content:'';}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+caption, th, td{text-align:left;font-weight:normal;}
+a,img,button{border:none;text-decoration:none;}
+a,button{text-decoration:none;}
+a,img{border:none;outline:none;}
+a{color:#333;text-decoration:none;outline:none;}
+ul,ol{list-style:none;}
+table{word-break:break-all;word-wrap:break-word;}
+body{font-family:'Microsoft YaHei',Arial, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;font-size:12px;font-weight:normal;color:#000;width:100%;background:#fff;}
+i{font-style: normal;}
+/*清除浮动*/
+.clearfix:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
+.clearfix{display:inline-table;}
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+.ma{margin-left:auto;margin-right:auto;}
+.w980{width:980px;}
+.mt10{margin-top:10px;}
+
+/*旅游产品分类*/
+.product_sort{width:190px;background:#6e6568 ;border:solid 1px #3299fd;position:relative; z-index:90;padding:16px 0;color:white;}
+.product_sort .hd{width:226px;height:13px;line-height:40px;text-indent:15px;font-size:15px;font-weight:bold;font-family:"微软雅黑";color:#fff;}
+.product_sort .bd .item{ height:28px;position:relative;}
+.product_sort .bd .item  a{color:#fff;position:relative;}
+.product_sort .bd .item .list{padding-left:14px;height:28px;line-height:28px;overflow:hidden;padding-left:12px;}
+.product_sort .bd .item .list:hover{background-color: #999395;}
+.product_sort .bd .item .list a{font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;color:#fff;padding:0 4px;height:28px;line-height:28px;}
+.product_sort .bd .item .list a:hover{text-decoration:none;color: #c81623;}
+.product_sort .bd .item .subitem{display:none;}
+#seaContent .subitem{width:998px;height: 424px;background:#f7f7f7;border:solid 1px #f7f7f7;border-left:none;font-family:"Microsoft YaHei",Arial,sans-serif;position:absolute;left:0px;top:0px;z-index:95;min-height:60px;height:auto!important;height:60px;display:block; box-shadow: 2px 0 5px rgba(0,0,0,.3);min-height: 478px;transition: top .25s ease;padding-top: 20px;padding-bottom: 10px;}
+#seaContent .subitem .inner .tit{overflow:hidden;  font-weight: 700;border-top:none;font-size:14px; text-align:center; padding:5px 0;}
+#seaContent .subitem .inner .tit1{border-top:none;}
+#seaContent .subitem .inner .tit .name{display:block;width:90px;color:#666;cursor:pointer;float:left;}
+#seaContent .subitem .inner .tit .name:hover{color:#c81623;}
+#seaContent .subitem .inner ul{overflow:hidden;zoom:1;display:block;margin-left:90px;width:630px;}
+#seaContent .subitem .inner ul li{float:left;padding-left:8px;height:25px;}
+#seaContent .subitem .inner .container  ul li a{color:#666;display:inline-block;height: 16px;line-height: 16px;border-left: 1px solid #e0e0e0; padding:4px 0;padding-left: 5px;font-size: 12px;     margin:4px 0;margin-top:0px;}
+#seaContent .subitem .inner .innHotwords ul li a{color:#666;display:block;}
+#seaContent .subitem .inner ul li a:hover{color:#c81623;text-decoration:none;}
+.innHotwords{height: 24px;}
+.innHotwords li{float: left;margin-right: 10px;padding:0 10px;background-color: #6e6568;height: 24px;color: #fff;}
+.innHotwords li a{display: inline-block;height: 24px;line-height: 24px;color: white !important;text-decoration: none;}
+.innHotwords s{position: absolute;width: 15px;height: 15px;line-height: 15px;left:-4px;top:-5px;text-decoration: none;}
+.innHotwords i{position: relative;width: 15px;height: 7px;line-height: 15px;overflow:hidden;display: inline-block;}
+.innLeft{float: left;width: 800px;height: 424px;}
+.innRight{float: right;width: 198px;height: 424px;}		
+.container i{position: relative;width: 7px;height: 15px;line-height: 15px;overflow:hiddendisplay: inline-block;margin-left: 5px;}
+.container s{position: absolute;width: 15px;height: 15px;line-height: 15px;top:0;left:-7px;text-decoration: none;}
+.rigTop{width: 168px;height: 144px;margin:0 15px;}
+.rigTop a{display: inline-block;width: 83px;height: 35px;float: left;margin:0 0 1px 1px;}
+.rigBottom{width: 168px;height: 269px;margin:10px 15px 0 15px;}
+.rigBottom a{display: inline-block;width: 168px;height: 134px;}
+.rigBottom a:last-child{margin-top: 1px;}
+#seaContent{width:998px;height: 480px;/* display:none; */position: absolute;top:0px;right:0px;}
+#searchBody{width: 1190px;height: 482px;margin:0 auto;position: relative;}
+/* E   侧边栏搜索部分 */
+
+
+
+/* S 身体 */
+	/* S 内容一 */
+		.containerOne{
+    		width: 1190px;
+    		margin:0 auto;
+            margin-top: 7px;
+		}
+		.oneLeft{
+			float: left;
+			width: 190px;
+			height: 480px;
+			margin-right: 9px;
+		}
+		.oneCenter{
+			float: left;
+			width: 790px;
+			height: 480px;
+		}
+	/* S 轮播图 */
+		  .all {
+            width: 790px;
+            height: 340px;
+            padding-top: 1px;
+            padding-bottom: 9px;
+            position: relative;
+
+        }
+
+        .screen {
+            width: 790px;
+            height: 340px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .screen li {
+            width: 790px;
+            height: 340px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .screen ul {
+            position: absolute;
+            left: 0;
+            top: 0px;
+             width: 7900px;
+        }
+
+        .all ol {
+            position: absolute;
+            right: 50%;
+            bottom: 10px;
+            margin-right: -128px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .all ol li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            background: #ddd;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            cursor: pointer;
+            color: #666;
+              border-radius: 50%;
+        }
+
+        .all ol li.current {
+            background: #f10215;
+        }
+
+        #arr {
+            display: none;
+        }
+
+        #arr span {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -20px;
+            background: #000;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #fff;
+            opacity: 0.3;
+            border: 1px solid #fff;
+        }
+
+        #arr #right {
+            right: 5px;
+            left: auto;
+        }
+
+	/* E 轮播图 */
+	
+	/* S 轮播图下 */
+		.cenBottomleft{
+			width: 390px;
+			height: 130px;
+			float: left;
+			margin-right: 9px;
+		}
+		.cenBottomleft a,.cenBottomleft img{
+			display: inline-block;
+			width: 390px;
+			height: 130px;
+		}
+
+		.cenBottomRight{
+			width: 390px;
+			height: 130px;
+			float: right;
+		}
+		.cenBottomRight a,.cenBottomRight img{
+			width: 390px;
+			height: 130px;
+			display: inline-block;
+		}
+	/* E 轮播图下 */
+	
+		.oneRight{
+			float: right;
+			width: 190px;
+			height: 480px;
+		}
+
+        .rigOne{
+            border-bottom:1px solid #999;
+            background-color: #fff;
+            padding-top: 10px;
+        }
+        .rigOne img{
+            border-radius: 25px;
+            width: 50px;
+            height: 50px; 
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .rigOne p{
+            float: right;
+            width: 102px;
+            line-height: 18px;
+            font-size: 12px;
+            color:#999;
+            margin:5px 0;
+        }
+        .hi a{
+            float: left;
+            width: 30px;
+            font-size: 12px;
+            height: 18px;
+            line-height: 18px;
+            color:#999;
+            margin:5px 0;
+        }
+        .plus{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .plus a{
+            float: left;
+            width: 70px;
+            font-size: 12px;
+            height: 20px;
+            line-height: 20px;
+            color:#e01222;
+            margin:5px ;
+            text-align: center;
+            border:2px solid #e01222;
+        }
+        .plus a:hover{
+            color:#fff;
+            background-color: #e01222;
+        }
+      
+        .plus a:first-Child{
+            float: left;
+        }
+        .plus a:last-Child{
+            float: right;
+        }
+        .rigCenter{
+            background-color: #fff;
+            padding:8px 0 4px;
+            border-bottom: 1px solid #e01222;
+            position: relative;
+        }
+        .rigCenter  li{
+            float: left;
+            color: #333;
+            height: 18px;
+            line-height: 18px;
+            
+        }
+        .rigCenter  li:last-Child{
+            float: right;
+            color: #333;
+            height: 18px;
+            line-height: 18px;
+            
+        }
+        .rigCenter  span{
+            width: 0;
+            height: 14px;
+            border-right: 1px solid #dfe0e1;
+            margin:2px 12px;
+            float: left;
+        }
+        
+        .display1{
+            position: absolute;
+            left:0;
+            top:30px;
+            background-color: #fff;
+            border-top: 1px solid #999;
+            padding:10px 0 0 10px;
+        }
+        .display1 a{
+            float: left;
+            line-height: 24px;
+            height: 24px;
+            color: #666;
+            z-index: 5;
+        }
+        .display2{
+            display: none;
+            position: absolute;
+            z-index: 4;
+            left:0;
+            top:30px;
+            background-color: #fff;
+            border-top: 1px solid #999;
+            padding:10px 0 0 10px;
+        }
+        .display2 a{
+            float: left;
+            line-height: 24px;
+            height: 24px;
+            color: #666;
+        }
+        .display3{
+            display: none;
+            position: absolute;
+            z-index: 4;
+            left:0;
+            top:30px;
+            background-color: #fff;
+            border-top: 1px solid #999;
+            padding:10px 0 0 10px;
+        }
+        .display3 a{
+            float: left;
+            line-height: 24px;
+            height: 24px;
+            color: #666;
+        }
+
+
+
+
+        .rigbottom{
+            width: 192px;
+            height: 210px;
+            position: relative;
+            margin-top: 115px;
+             border-toppx solid #e7e7e7 ;
+            margin-left: 2px;
+        }
+
+        .rigbottom ul{
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .rigbottom ul li{
+            float: left;
+            width: 47px;
+            height: 61px;
+            border-right:1px solid #e7e7e7 ;
+            border-bottom:1px solid #e7e7e7 ;
+            padding-top: 14px;
+        }
+        .rigbottom i{
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin-left: 11.5px;
+            /*background: url(../images/sprite_fs@1x.png) no-repeat 0px 0px;*/
+
+        }
+        .rigbottom span{
+            display: inline-block;
+            width: 47px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+        }
+        .rigbottom .i1{
+            background: url(../images/sprite_fs@1x.png) no-repeat -86px -86px;
+
+        }
+        .rigbottom .i2{
+            background: url(../images/sprite_fs@1x.png) no-repeat -0px -43px;
+
+        }
+        .rigbottom .i3{
+            background: url(../images/sprite_fs@1x.png) no-repeat -86px -43px;
+
+        }
+        .rigbottom .i4{
+            background: url(../images/sprite_fs@1x.png) no-repeat -86px -0px;
+
+        }
+        .rigbottom .i5{
+            background: url(../images/sprite_fs@1x.png) no-repeat -86px -43px;
+
+        }
+        .rigbottom .i6{
+            background: url(../images/sprite_fs@1x.png) no-repeat 0px 0px;
+
+        }
+        .rigbottom .i7{
+            background: url(../images/sprite_fs@1x.png) no-repeat -43px -43px;
+
+        }
+        .rigbottom .i8{
+            background: url(../images/sprite_fs@1x.png) no-repeat -86px -86px;
+
+        }
+        .rigbottom .i9{
+            background: url(../images/sprite_fs@1x.png) no-repeat -130px 0px;
+
+        }
+        .rigbottom .i10{
+            background: url(../images/sprite_fs@1x.png) no-repeat -43px -86px;
+
+        }
+        .rigbottom .i11{
+            background: url(../images/sprite_fs@1x.png) no-repeat -130px -86px;
+
+        }
+        .rigbottom .i12{
+            background: url(../images/sprite_fs@1x.png) no-repeat -43px 0px;
+            
+        }
+
+	/* E 内容一 */
+
+    /* S 内容二 */
+        .wrap {
+            width: 1200px;
+            margin: 80px auto;
+        }
+
+        .slide {
+            height: 500px;
+            position: relative;
+        }
+
+        .slide li {
+            position: absolute;
+            left: 200px;
+            top: 0;
+        }
+
+        .slide li img {
+            width: 100%;
+        }
+
+        .arrow {
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        .prev, .next {
+            width: 76px;
+            height: 112px;
+            position: absolute;
+            z-index: 99;
+        }
+
+        .prev {
+            left: 0;
+            background: url(../images/prev.png) no-repeat;
+        }
+
+        .next {
+            right: 0;
+            background-image: url(../images/next.png);
+        }
+        
+
+        /* S 手风琴 */ 
+              #Accordion {
+                  width: 1190px;
+                  height: 400px;
+                  margin: 10px auto;
+                  border: 1px solid red;
+                  overflow: hidden;
+              }
+              
+              #Accordion li {
+                  width: 240px;
+                  height: 400px;
+                  float: left;
+                  background-image: url(../images/1.jpg);
+              }
+              
+              #Accordion ul {
+                  width: 1300px;
+              }
+        /* E 手风琴 */
+    
+
+       /* S navBar */
+             #navBar{
+                display: none;
+                border-bottom: 2px solid #f10214;
+                width: 100%;
+                height: 48px;
+                background-color: #fff;
+            }
+        
+            .fixed {
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            .CenterSearch{
+                width: 1190px;
+                margin:0 auto;
+                height: 40px;
+                line-height: 40px;
+                background: url(../images/logo_s.v2.png) no-repeat ;
+                position: relative;
+            }
+            .CenterSearch .forInput{
+                background-color: #efefef;
+                width: 550px;
+                height: 35px;
+                padding: 0;
+                border:none;
+                vertical-align: middle;
+                position: absolute;
+                left:320px;
+                top:6px;
+            }
+            .CenterSearch .forImg{
+                width: 50px;
+                height: 35px;
+                line-height: 35px;
+                background-color: #f10215;
+                font-weight: 700;
+                color:#fff;
+                position: absolute;
+                left: 870px;
+                top:6px;
+            }
+            .CenterSearch span{
+                display: inline-block;
+                background: url(../images/sprite-photo-search.png) no-repeat;
+                width: 19px;
+                height: 15px;
+                position: absolute;
+                left: 830px;
+                top:17px;
+            }
+       /* E navBar */
+
+    /* E 内容二 */
+
+
+    /* S 内容三 */
+        .containerThree{
+            width: 100%;
+        }
+        .CenterOne{
+            width: 1190px;
+            height: 305px;
+            margin:0 auto;
+            margin-top:30px;
+        }
+        .oneTitle{
+            background: url(../images/thronetitl.png) no-repeat;
+            height: 55px;
+            position: relative;
+        }
+        .titLeft{
+            float: left;
+
+        }
+        .titLeft i{
+            display: inline-block;
+            width: 32px;
+            height: 30px;
+            background: url(../images/sprite_index@1x.png) no-repeat -192px -50px;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .titLeft span{
+            display: inline-block;
+            width: 33px;
+            height: 40px;
+            background: url(../images/sprite_index@1x.png) no-repeat 0px -40px;
+            position: absolute;
+            left:50px;
+            top:8px;
+        }
+        .titLeft p{
+            display: inline-block;
+            height: 40px;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 40px;
+            color: #fff;
+            position: absolute;
+            left:90px;
+            top:8px;
+        }
+        .titLeft a{
+            display: inline-block;
+            height: 24px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #fff;
+            position: absolute;
+            left:230px;
+            top:19px;
+        }
+        .titLeft b{
+            display: inline-block;
+            width: 15px;
+            height: 16px;
+            background: url(../images/sprite_index@1x.png) no-repeat -154px -40px;
+            position: absolute;
+            left:132px;
+            top:5px;
+        }
+
+
+        .titRight{
+            float: right;
+            margin-right: 30px;
+        }
+        .titRight p{
+            float: left;
+            height: 55px;
+            line-height: 55px;
+            font-size: 14px;
+            color: #fff;
+        }
+        .titRight div{
+            float: left;
+            width: 129px;
+            height: 45px;
+            margin:5px ;
+        }
+        .titRight span{
+            float: left;
+            width: 35px;
+            background-color: #440106;
+            font-size: 20px;
+            border-radius: 3px;
+            text-align: center;
+            color: #f90013;
+            font-weight: 700;
+            line-height: 37px;
+            height: 37px;
+            margin-top:4px;
+        }
+        .titRight i{
+            float: left;
+            color: #f90013;
+            font-weight: 700;
+            line-height: 37px;
+            height: 37px;
+            margin:4px;
+        }
+
+        .oneContent{
+
+            margin:0 auto;
+            height: 250px;
+            padding-top: 10px;
+        }
+
+        .oneconUl{
+            width: 1005px;
+            height: 227px;
+            float: left;
+            position: relative;
+           overflow: hidden;
+        }
+        .oneconUl li{
+            width: 170px;
+            height: 225px;
+            float: left;
+            padding: 0 14px 0 15px;
+            border:1px solid #e7e7e7;
+        }
+        .oneconUl a,.oneconUl img{
+            display: block;
+            margin:0 auto;
+            width: 130px;
+            height: 130px;
+            color:#666;
+        }
+        .oneconUl p{
+           color: #999;
+           display: block;
+           font-size: 12px;
+           text-align: center;
+           height: 22px;
+           line-height: 16px;
+           width: 170px;
+           margin-top: 20px;
+        }
+        .shadow1{
+            position: absolute;
+            left:10px;
+            top:113px;
+            text-align: center;
+            background: url(../images/sprite_index@1x.png) no-repeat 0  0;
+            background-size: 218px 218px;
+            width: 170px;
+            height: 20px;
+
+        }
+        .oneconUl .wor1{
+           font-size: 18px;
+           color: #f10214;
+            font-weight: 700;
+            margin-right: 8px;
+            margin-top: 5px;
+        }
+        .wor{
+            margin-top: 25px;
+            margin-left: 5px;
+        }
+        .oneconUl .wor2{
+           font-size: 12px;
+           color: #999;
+           text-decoration: line-through;
+        }
+
+        .oneconDiv{
+            float: right;
+            width: 180px;
+            height: 225px;
+        }
+        .oneconDiv a,.oneconDiv img{
+            width: 180px;
+            height: 225px;
+            
+        }
+
+
+
+    
+    /* E 内容三 */
+
+       .qiegelunbo  .container{
+            width: 790px;
+            height: 340px;
+            border:1px solid #0094ff;
+            margin: 170px auto;
+            position: relative;
+            display: flex;
+            
+        }
+        /*
+            伪元素的 作用是 在不改变 html代码的情况下 添加一些外观
+            由于在js中是无法获取的,无法绑定点击事件
+            伪元素的作用:添加修饰的外观 不参数 dom事件的操作
+        */
+       .qiegelunbo  .before {
+            text-decoration: none;
+            font-size:100px;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background-color: gray;
+            color:white;
+            position: absolute;
+            top:140px;
+            left:-100px;
+        }
+      .qiegelunbo  .after{
+            text-decoration: none;
+            font-size:100px;
+            background-color: gray;
+            color:white;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            line-height: 100px;
+            text-align: center;
+            right:-100px;
+            top:140px;
+        }
+      .qiegelunbo  .items{
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: orange;
+            margin: 0;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 1s;
+        }
+      .qiegelunbo  .items .item{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            
+        }
+      .qiegelunbo  .item:nth-child(1){
+            background: url(../images/01.jpg);
+            transform: rotateX(0) translateZ(190px);
+         
+        }
+       .qiegelunbo  .item:nth-child(2){
+            background: url(../images/02.jpg);
+            transform: rotateX(180deg) translateZ(190px);
+             
+        }
+       .qiegelunbo  .item:nth-child(3){
+            background: url(../images/03.jpg);
+            transform: rotateX(90deg) translateZ(190px);
+        }
+       .qiegelunbo  .item:nth-child(4){
+            background: url(../images/04.jpg);
+            transform: rotateX(-90deg) translateZ(190px);
+        }
+        
+/*      为 第二个 .items 里面的 .item 设置 图片偏移  */
+       .qiegelunbo .items:nth-child(2) .item{
+            background-position: -395px 0px;
+        }
+        .qiegelunbo .items:nth-child(2) .item{
+            background-position: -395px 0px;
+        }
+       .qiegelunbo  .items:nth-child(2) .item{
+            background-position: -395px 0px;
+        }
+       .qiegelunbo  .items:nth-child(2) .item{
+            background-position: -395px 0px;
+        }
+
+
+
+
+
+/* E 身体 

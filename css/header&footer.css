@@ -1,0 +1,539 @@
+	/**
+	 * 这是JD头部跟尾部的样式
+	 */
+
+
+/* S commonCss */
+	a:hover{
+		color:#c81623;
+	}
+	body{
+		background-color: #f6f6f6;
+
+	}
+/* E commonCss */
+
+
+/* S 头部 */
+
+	/* S 广告 */
+		.BannerAdvertisement{
+			background-color: #fb1b0f;
+		}
+		.header .advertisement{
+			position: relative;
+			width: 1190px;
+			height: 80px;
+			background-color: #666;
+			margin:0 auto;
+		}
+		.advertisement a{
+			width: 1190px;
+			height: 80px;
+			display: inline-block;
+			background:url(../images/heaAdvertise.jpg) no-repeat 50% 0;		
+		}
+		.advertisement #adClose{
+			position: absolute;
+			right: 5px;
+			top:5px;
+			font-weight: bold;
+			font-size: 14px;
+			color: #fff;
+			background-color: rgb(45,45,45);
+			opacity: .3;
+			width: 20px;
+			text-align: center;
+			line-height: 20px;
+		}
+	/* E 广告 */
+
+	/*S 热键   */	
+		.BannerShortcut{
+			height: 30px;
+			background-color: #e3e4e5;
+			border-bottom:1px solid #ddd;
+			// overflow:hidden;
+		}
+		.shortcut{
+			width: 993px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 14px;
+			font-weight: normal;
+			margin:0 auto;
+			padding-left: 197px;
+			position: relative;
+		}
+		.icon-dingwei{
+			color:#f10215;
+		}
+		.shoLeft{
+			float: left;
+			height: 30px;
+			line-height: 30px;
+			font-size: 12px;
+		}
+		.shoRight{
+			float: right;
+			height: 30px;
+			position:relative;
+		}
+		.shoRight ul{
+			display: inline-block;								
+		}
+		.shoRight li {
+			float: left;
+			font-size: 12px;
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			color: #999;
+			padding:0 8px;
+		}
+		.shoRight i{
+			position: relative;
+			width: 15px;
+			height: 7px;
+			line-height: 7px;
+			overflow:hidden;
+			display: inline-block;
+		}
+		.shoRight s{
+			position: absolute;
+			width: 22px;
+			height: 15px;
+			line-height: 15px;
+			top:-8px;
+			left:0;
+			text-decoration: none;
+		}
+		.shoRight span{
+			float: left;
+			height: 10px;
+			text-align: center;
+			border-right:1px solid #999;
+			margin:10px 0px;
+		}
+		.shoRight span:last-child{
+			border-right:none;
+		}
+
+
+
+		.dropdown1{
+			display: none;
+			width: 280px;
+			position: absolute;
+			left: 219px;
+			top: 30px;
+			z-index: 999;
+			color: #999;
+			background-color: #fff;
+			border:1px solid #999;
+			border-top: none;
+		}
+		.dropdown1 a{
+			float: left;
+			width: 110px;
+			height: 24px;
+			line-height: 24px;
+			color: #999;
+			margin:5px 20px 0 10px;
+		}
+		.dropdown2{
+			display: none;
+			width: 248px;
+			position: absolute;
+			right: 149px;
+			top: 30px;
+			z-index: 999;
+			color: #999;
+			background-color: #fff;
+			border:1px solid #999;
+			border-top: none;
+		}
+		.dropdown2 a{
+			float: left;
+			width: 94px;
+			height: 24px;
+			line-height: 24px;
+			color: #999;
+			margin:5px 20px 0 10px;
+		}
+		.dropdown2 h3{
+			margin-left:15px;
+			font-weight: 700;
+			color: #666;
+		}
+		#dropdown3{
+			display: none;
+			width: 1190px;
+			position: absolute;
+			left: -525px;
+			top: 31px;
+			z-index: 999;
+			color: #999;
+			background-color: #fff;
+			border:1px solid #999;
+			border-top: none;
+		}
+		.dropdown3 div{
+			width: 280px;
+			float: left;
+			padding-left:16px;
+			padding-top:16px;
+		}
+		.dropdown3 div a{
+			width: 90px;
+			height: 24px;
+			line-height: 24px;
+			color: #999;
+			float: left;
+		}
+		.dropdown3 .droOne a{
+			width: 70px;
+		}
+		.dropdown3 span{
+			float: left;
+			height: 177px;
+			text-align: center;
+			border-right:1px solid #999;
+			margin:1px 0px;
+			color: #999;
+		}
+		.dropdown3 h3{
+			margin-left:10px;
+			font-weight: 700;
+			color: #666;
+		}
+
+	/*E 热键   */
+
+	/* S 导航 */	
+		.navigation{
+			width: 1190px;
+			margin:0 auto;
+			position:relative;
+			padding-top: 20px;
+			background-color: #F6F6F6;
+
+		}
+		/* S logo */
+			.navLogo{
+			position: absolute;
+			left:0;
+			top:-31px;
+			z-index: 2;
+			background-color: #fff;
+			 box-shadow: 0 -4px 10px rgba(0,0,0,.2)
+			}
+			.navLogo h1,.navLogo a{
+				display: inline-block;
+				width: 190px;
+				height: 170px;			
+			}
+			.navLogo a {
+				background:url(../images/logo.v2.png) no-repeat 0 0;
+			}
+						
+		/* E logo */
+		
+		/* S links */
+			.navLinks{
+				width: 1190px;
+				height: 120px;
+				margin:0 auto;
+			}
+			.linTop{
+				margin-left: 320px;
+			}
+			.topForm{
+				margin-top: 5px;
+				position: relative;
+			}
+			.topForm .forInput{
+				width: 490px;
+				height: 25px;
+				line-height: 25px;
+				border:1px solid #f10215;
+				color:rgb(153, 153, 153);
+				font-size: 14px;
+				text-indent: 2em;
+			}
+			.topForm span{
+				background: url(../images/sprite-photo-search.png) no-repeat -30px 0;
+				width: 19px;
+				height: 15px;
+				position: absolute;
+				right:394px;
+				top:7px;
+			}
+			.topForm .forImg{
+				width: 35px;
+				height: 27px;
+				background-color: #f10215;
+				position:absolute;
+				right:343px;
+				top:0px;
+			}
+
+			/* S 搜索框 */
+			.logo .search{
+				float: right;
+				width: 519px;
+				height: 240px;
+				margin-top:27px;
+				margin-bottom: 25px;
+				padding:5px;
+				overflow: hidden;
+				position: relative;
+			}
+			.search .txt1{
+				width: 420px;
+				height: 30px;
+				float: left;
+				border:none;
+				background:url(../images/shuru.gif);
+			}
+			.search .btn1{
+				background-color: #2F70D0;
+				height: 30px;
+				width: 97px;
+				line-height: 27px;
+				font-size: 20px;
+				margin-left: 0;
+				border:0;
+				color:white;
+				font-weight: 500;
+			}
+			.search #container{	
+				width: 519px;
+				position: absolute;
+				text-indent: 2em;
+				height: 24px;
+				line-height: 24px;
+			}
+
+		/* E 搜索框 */
+			
+		/* S 购物车 */
+			.topBuycar{
+				background-color: #fff;
+				position: absolute;
+				right:99px;
+				top:20px;
+				width: 190px;
+				height: 36px;
+				text-align: center;
+				border:1px solid #e3e4e5;
+			}
+			.topBuycar a{
+				color:#f10214;
+				display: inline-block;
+				height: 36px;
+				line-height: 36px;
+				font-size: 14px;
+			}
+			.topBuycar .car{
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				right: 134px;
+				top:9px;
+				color: #f10214;
+			}
+			.topBuycar .zero{
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				position: absolute;
+				right: 44px;
+				top:5px;
+				background-color: #f10215;
+				font-size: 12px;
+				line-height: 12px;
+				color: #fff;
+				text-align: center;
+				border-radius: 7px;
+			}
+		/* E 购物车 */
+			
+		/* S 热键 */
+			.topHotwords{
+				width: 550px;
+				height: 20px;
+				position: absolute;
+				z-index: 12;
+
+				// background-color: pink;
+				
+			}
+			.topHotwords li{
+				float: left;
+				margin-right:10px; 
+				height: 20px;
+				line-height: 20px;
+				color:#999;
+				margin-top:8px;
+			}
+			.topHotwords li:first-child a{
+				color:#f10215
+			}
+		/* E 热键 */
+		
+		/* S 二维码 */
+			.topQrcode{
+				background:url(../images/QRCodeJD.png) no-repeat;
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				right:0;
+				top:0;
+			}
+		/* E 二维码 */
+	
+		/* S 下面导航 */			
+			.help{
+				float: right;
+				padding-top: 40px;
+			}
+			.help a{
+				display: inline-block;
+				width: 190px;
+				height: 40px;
+				background:url(../images/jdfupin.png);	
+			}
+
+
+			.linBottom{
+				height: 40px;
+				padding-top: 10px;
+				float: left;
+				position: absolute;
+				/* left: 225px;
+				top:15px; */
+				left: 225px;
+				top:86px;
+				z-index: 12;
+			}
+			.linBottom li{
+				float: left;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				padding-right:15px;
+				padding-left:15px;
+				font-size: 16px;
+				font-weight: 700;
+				color: #555;
+			}
+			.linBottom b{
+				font-style: normal;
+				float: left;
+				width: 0px;
+				border-right:1px solid #999;
+				height: 15px;
+				line-height: 15px;
+				margin-top: 15px;
+
+			}
+	        ul {
+	            position: relative;
+	        }	
+	        .nav span {
+	            position: absolute;
+	            top: 15px;
+	            left: 0;
+	          	width: 62px;
+	          	height: 30px;
+	            background: url(../images/cloud.gif) no-repeat;
+	        }
+
+		/* E 下面导航 */			
+		/* E links */
+	/* E 导航 */
+
+/* E 头部 */
+
+
+/*footer页面底部开始*/
+.slogan {
+    height: 94px;
+    background-color: #F5F5F5;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.slogan1, .slogan2, .slogan3,  .slogan4{
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    margin-left: -300px;
+    width: 300px;
+}
+.slogan1 {
+
+    margin-left: -600px;
+
+}
+.slogan3 {
+
+    margin-left: 0;
+
+}
+.slogan4 {
+
+    margin-left: 300px;
+
+}
+.footer-links dl {
+    width: 198px;
+    float: left;
+
+}
+.footer-links dt, .coverage .dt{
+    height: 30px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+}
+.footer-links dd {
+    height: 20px;
+}
+
+.coverage {
+    width: 188px;
+    height: 169px;
+    background:url(../images/jds.png) no-repeat 0 -131px;
+    float: right;
+    padding-left: 15px;
+}
+.coverage p {
+    line-height: 20px;
+    margin-top: 18px;
+}
+.look {
+    text-align: right;
+}
+.footer {
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+    text-align: center;
+}
+.links {
+    margin: 23px 0 10px 0;
+}
+.links a {
+    margin: 0 5px;
+}
+.copyright {
+    line-height: 20px;
+}
+.brand {
+    margin-top: 10px;
+}
+.brand a {
+    margin: 0 5px;
+}
+/*footer页面底部结束*/
